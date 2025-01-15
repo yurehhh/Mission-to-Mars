@@ -37,11 +37,16 @@
     font-size: 18px;
   }
 
-
+.distance{
+  margin-left: 500px;
+  margin-top: 250px;
+  height: 100px;
+  width: 100px;
+}
 
 
   .back{
-    top: 50px;
+    top: -300px;
     margin-left: 55px;
     font-family: "Starwars2";
     color: white;
