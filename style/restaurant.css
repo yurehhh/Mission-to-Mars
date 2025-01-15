@@ -7,6 +7,46 @@
         height: 100%;
         overflow: hidden; /* Prevent scrolling */
       }
+
+      .image-container {
+        display: flex; /* Arranges items horizontally */
+        flex-wrap: wrap; /* Wraps items to the next line if necessary */
+        gap: 10px; /* Adds spacing between buttons */
+        justify-content: center; /* Centers the buttons horizontally */
+        padding: 20px; /* Adds padding around the container */
+        background-color: #f9f9f9; /* Background color for the container */
+        border: 2px solid #ccc; /* Border for the container */
+        border-radius: 10px; /* Rounded corners for the container */
+    }
+
+    .image-container button {
+        background: none; /* Removes the default button styling */
+        border: none; /* Removes the default border */
+        padding: 0; /* Removes padding */
+        cursor: pointer; /* Changes cursor to pointer */
+    }
+
+    .image-container img {
+        width: 150px; /* Adjust the size of each image */
+        height: 150px; /* Adjust the size of each image */
+        object-fit: cover; /* Ensures images fit without distortion */
+        border-radius: 5px; /* Rounded corners for images */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for styling */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    }
+
+    .image-container img:hover {
+        transform: scale(1.1); /* Enlarges the image slightly on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Emphasized shadow on hover */
+    }
+
+      h1{
+        color: aliceblue;
+        text-align: center;
+        margin-top: 100px;
+        font-family: "Starwars2";
+        font-size: 60px;
+      }
   
       .frame {
         width: 100vw;
