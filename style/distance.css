@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling if the image overflows */
+}
+
+.frame {
+    width: 100vw; /* Match the viewport width */
+    height: 100vh; /* Match the viewport height */
+    object-fit: cover; /* Ensures the image fills the screen while maintaining its aspect ratio */
+    position: absolute; /* Positions it relative to the screen */
+    top: 0; /* Aligns to the top */
+    left: 0; /* Aligns to the left */
+}
