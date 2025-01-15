@@ -1,17 +1,82 @@
-html, body {
-    background-image: url(https://img.freepik.com/premium-photo/stars-galaxy-outer-space-sky-night-universe_146539-175.jpg);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Prevents scrolling if the image overflows */
+    /* Full-Screen Background Styling */
+    html, body {
+        background-image: url(https://img.freepik.com/premium-photo/stars-galaxy-outer-space-sky-night-universe_146539-175.jpg);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Prevent scrolling */
+      }
+  
+      .frame {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      /* Circle Container */
+      .circle-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+  
+      /* Circle Styling */
+      .circle {
+        position: absolute;
+        width: 80px; /* Circle size */
+        height: 80px; /* Circle size */
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+  
+      /* Hover Effect */
+      .circle:hover {
+        transform: scale(1.2); /* Slight zoom on hover */
+        background-color: #ccc; /* Change color on hover */
+      }
+  
+
+  /* Left-Side Circles */
+  .circle:nth-child(1) { top: 28%; left: 5%; }   /* Top-left */
+  .circle:nth-child(2) { top: 48%; left: 10%; transform: translateY(-50%); } /* Middle-left */
+  .circle:nth-child(3) { top: 62%; left: 5%; }  /* Bottom-left */
+
+  /* Right-Side Circles */
+  .circle:nth-child(4) { top: 28%; right: 5%; }   /* Top-right */
+  .circle:nth-child(5) { top: 48%; right: 10%; transform: translateY(-50%); } /* Middle-right */
+  .circle:nth-child(6) { top: 62%; right: 5%; }  /* Bottom-right */
+
+  /* Middle Circles */
+  .circle:nth-child(7) { top: 43%; left: 40%; } /* Top-middle-left */
+  .circle:nth-child(8) { top: 31%; left: 50%; transform: translateX(-50%); } /* Top-center */
+  .circle:nth-child(9) { top: 43%; left: 56%; } /* Top-middle-right */
+  .circle:nth-child(10) { top: 63%; left: 45%; transform: translate(-50%, -50%); } /* Bottom-middle-left */
+  .circle:nth-child(11) { top: 63%; left: 55%; transform: translate(-50%, -50%); } /* Bottom-middle-right */
+
+  .a{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ position: relative;
+ font-size: 75px;
+  }
+.b{
+    color: rgb(87, 0, 118);
+    text-align: center;
+    margin-top: -125px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 75px;
+
 }
 
-.frame {
-    width: 100vw; /* Match the viewport width */
-    height: 100vh; /* Match the viewport height */
-    object-fit: cover; /* Ensures the image fills the screen while maintaining its aspect ratio */
-    position: absolute; /* Positions it relative to the screen */
-    top: 0; /* Aligns to the top */
-    left: 0; /* Aligns to the left */
+@font-face {
+  font-family: Starwars2;
+  src: url(../);
 }
