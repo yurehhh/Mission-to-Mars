@@ -36,3 +36,34 @@
   .date {
     font-size: 18px;
   }
+
+  .back{
+    top: -200px;
+    margin-left: 55px;
+    font-family: "Starwars2";
+    color: white;
+    font-size: 30px;
+    position: relative
+  }
+    @font-face {
+      font-family: Starwars2;
+      src: url(../fonts/starwars2.ttf);
+    }
+
+.schip{
+margin-left: 500px;
+margin-top: 200px;
+
+}
+    .details{
+      background-color: rgba(55, 0, 156, 0.708);
+      border-radius: 5%;
+    position: absolute;
+    }
+
+  .schipinfo{
+margin-left: 550px;
+
+background-color:  rgb(55, 0, 156); ;
+
+  }

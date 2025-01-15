@@ -37,7 +37,6 @@
   
       /* Hover Effect */
       .circle:hover {
-        transform: scale(1.2); /* Slight zoom on hover */
         background-color: #ccc; /* Change color on hover */
       }
   

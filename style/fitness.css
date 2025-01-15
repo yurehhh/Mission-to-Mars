@@ -36,3 +36,19 @@
   .date {
     font-size: 18px;
   }
+
+.back{
+top: -15px;
+margin-left: 55px;
+font-family: "Starwars2";
+color: white;
+font-size: 30px;
+position: relative;
+}
+
+
+
+  @font-face {
+    font-family: Starwars2;
+    src: url(../fonts/starwars2.ttf);
+  }
