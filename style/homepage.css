@@ -63,7 +63,7 @@
     color: white;
     text-align: center;
     margin-top: 100px;
- font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: "Starwars2";
  position: relative;
  font-size: 75px;
   }
@@ -71,12 +71,12 @@
     color: rgb(87, 0, 118);
     text-align: center;
     margin-top: -125px;
- font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: "Starwars2";
  font-size: 75px;
 
 }
 
 @font-face {
   font-family: Starwars2;
-  src: url(../);
+  src: url(../fonts/starwars2.ttf);
 }
