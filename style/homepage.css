@@ -59,6 +59,26 @@
   .circle:nth-child(10) { top: 63%; left: 45%; transform: translate(-50%, -50%); } /* Bottom-middle-left */
   .circle:nth-child(11) { top: 63%; left: 55%; transform: translate(-50%, -50%); } /* Bottom-middle-right */
 
+  /* Time and Date Styling */
+  .time-date-container {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .time {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+
   .a{
     color: white;
     text-align: center;
