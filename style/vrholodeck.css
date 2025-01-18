@@ -1,4 +1,4 @@
-
+  
     html, body {
         background-image: url(https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg);
         margin: 0;
@@ -17,8 +17,8 @@
         top: 0;
         left: 0;
       }
-
-
+  
+  
         /* Time and Date Styling */
   .time-date-container {
     position: fixed;
@@ -27,74 +27,30 @@
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-
+  
   }
-
+  
   .time {
     font-size: 30px;
     font-weight: bold;
    
   }
-
+  
   .date {
     font-size: 18px;
   }
-
+  
   .back{
     top: 50px;
     margin-left: 55px;
     font-family: "Starwars2";
     color: white;
     font-size: 30px;
-    position: fixed;
-    position: relative
+    position: fixed
     
   }
     @font-face {
       font-family: Starwars2;
       src: url(../fonts/starwars2.ttf);
     }
-
-.schip{
-margin-left: 375px;
-margin-top: 200px;
-position: fixed;
-
-
-}
-    .details{
-      background-color: rgba(55, 0, 156, 0.708);
-      border-radius: 5%;
-    position: absolute;
-    }
-
-    .yo{
-margin-left: 53%;
-position: fixed;
-background-color:  rgba(55, 0, 156, 0.707); ;
-color: white;            /* White text for contrast */
-padding: 20px;           /* Space inside the box */
-border-radius: 10px;     /* Rounded corners */
-width: 300px;            /* Set box width */
-margin-top: 250px;
-font-family: Arial, Helvetica, sans-serif;
-    }
-
-    
-    .a{
-      color: white;
-      text-align: center;
-      margin-top: 15px;
-   font-family: "Starwars2";
-   position: relative;
-   font-size: 75px;
-    }
-  .b{
-      color: rgb(41, 0, 118);
-      text-align: center;
-      margin-top: -178px;
-   font-family: "Starwars2";
-   font-size: 75px;
-   
   
-  }
