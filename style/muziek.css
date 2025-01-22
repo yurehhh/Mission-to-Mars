@@ -19,7 +19,7 @@
     }
 
 
-      /* Time and Date Styling */
+      
 .time-date-container {
   position: fixed;
   top: 15px;
@@ -80,4 +80,32 @@
     margin-top: 10px;
     font-size: 14px;
     color: #bbb;
+}
+
+.music-player1 {
+  margin-top: -210px;
+  margin-left: 370px;
+  background: #333;
+  color: #fff;
+  border-radius: 10px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.player-header1 h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.player-controls1 audio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.track-info1 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bbb;
 }
