@@ -3,18 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcamfeeds</title>
+    <title>Webcam Feed</title>
     <link rel="stylesheet" href="../style/webcamfeeds.css">
 </head>
 <body>
-    <img src="../images/frame.svg" alt="frame" class="frame">
-
     <div class="time-date-container">
         <div class="time" id="time">--:--</div>
         <div class="date" id="date">--/--/----</div>
-      </div>
     </div>
-    <a href="../index.html" class="back" >Terug</a>
-    <script src="../javascript/webcamfeeds.js" ></script>
+
+    <a href="/index.html" class="back">Terug</a>
+
+    <h1>Webcam Feed</h1>
+
+    <div class="webcam-container">
+        <!-- Video-element dat de bewegende alien toont -->
+        <video class="alien-feed" autoplay loop muted>
+            <source src="../images/youtube_G2xXu8_2Exo_1280x720_h264.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="button-container">
+        <button class="hangup">Ophangen</button>
+        <button class="next">Volgende</button>
+    </div>
+
+    <script>
+        // Script om de tijd en datum te tonen
+        const timeEl = document.getElementById('time');
+        const dateEl = document.getElementById('date');
+
+        function updateTimeAndDate() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+
+            timeEl.textContent = `${hours}:${minutes}`;
+            dateEl.textContent = `${day}/${month}/${year}`;
+        }
+
+        setInterval(updateTimeAndDate, 1000);
+        updateTimeAndDate();
+    </script>
 </body>
 </html>
