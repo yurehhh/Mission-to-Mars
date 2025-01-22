@@ -5,7 +5,12 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: Arial, sans-serif;
+  font-family: Starwars2
+}
+
+@font-face {
+  font-family: "Starwars2" ;
+  src: url(../fonts/starwars2.ttf);
 }
  
 h1 {

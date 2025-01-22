@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="../style/cinema.css">
+    <style>
+      
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin-top: -300px;
+        }
+
+        iframe {
+            width: 750px;
+            height: 500px; 
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/frame.svg" alt="frame" class="frame">
+
+    <div class="time-date-container">
+        <div class="time" id="time">--:--</div>
+        <div class="date" id="date">--/--/----</div>
+    </div>
+    <h1 class="a">Cinema</h1>
+    <h1 class="b">Cinema</h1>
+    <a href="/pages/cinema.html" class="back">Terug</a>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MW-LSIRNI4k?si=kXqhiPJ2uLjgNz4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+
+    <script src="/javascript/cinema.js"></script>
+</body>
+</html>
