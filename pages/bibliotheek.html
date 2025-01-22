@@ -7,14 +7,60 @@
     <link rel="stylesheet" href="../style/bibliotheek.css">
 </head>
 <body>
-    <img src="../images/frame.svg" alt="frame" class="frame">
-
     <div class="time-date-container">
         <div class="time" id="time">--:--</div>
         <div class="date" id="date">--/--/----</div>
-      </div>
     </div>
-    <a href="../index.html" class="back" >Terug</a>
-    <script src="/javascript/muziek.js" ></script>
+
+    <a href="/index.html" class="back">Terug</a>
+
+    <h1>Galactische Bibliotheek</h1>
+
+    <div class="library-container">
+        <div class="section">
+            <h2>Sterrenstelsels</h2>
+            <p>Ontdek de geheimen van verre sterrenstelsels en planeten.</p>
+            <button class="view-more">Meer Informatie</button>
+        </div>
+        <div class="section">
+            <h2>Technologie</h2>
+            <p>Leer meer over futuristische technologie en ruimteschepen.</p>
+            <button class="view-more">Meer Informatie</button>
+        </div>
+        <div class="section">
+            <h2>Geschiedenis</h2>
+            <p>Duik in de geschiedenis van het universum en oude beschavingen.</p>
+            <button class="view-more">Meer Informatie</button>
+        </div>
+    </div>
+
+    <script>
+        // Tijd en datum bijwerken
+        const timeEl = document.getElementById('time');
+        const dateEl = document.getElementById('date');
+
+        function updateTimeAndDate() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+
+            timeEl.textContent = `${hours}:${minutes}`;
+            dateEl.textContent = `${day}/${month}/${year}`;
+        }
+
+        setInterval(updateTimeAndDate, 1000);
+        updateTimeAndDate();
+
+        // Knopinteracties
+        const buttons = document.querySelectorAll('.view-more');
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                alert(`Je bekijkt nu meer over categorie ${index + 1}`);
+            });
+        });
+    </script>
 </body>
 </html>
