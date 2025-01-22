@@ -14,7 +14,6 @@
         gap: 10px; /* Adds spacing between buttons */
         justify-content: center; /* Centers the buttons horizontally */
         padding: 20px; /* Adds padding around the container */
-        background-color: #f9f9f9; /* Background color for the container */
         border: 2px solid #ccc; /* Border for the container */
         border-radius: 10px; /* Rounded corners for the container */
     }
