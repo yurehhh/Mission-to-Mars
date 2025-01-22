@@ -1,56 +1,166 @@
-  
-    html, body {
-        background-image: url(https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg);
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden; 
-      
-      }
-  
-      .frame {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-  
-  
-        /* Time and Date Styling */
-  .time-date-container {
-    position: fixed;
-    top: 15px;
-    right: 55px;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  
-  }
-  
-  .time {
-    font-size: 30px;
-    font-weight: bold;
-   
-  }
-  
-  .date {
-    font-size: 18px;
-  }
-  
-  .back{
-    top: 50px;
-    margin-left: 55px;
-    font-family: "Starwars2";
-    color: white;
-    font-size: 30px;
-    position: fixed
     
-  }
-    @font-face {
-      font-family: Starwars2;
-      src: url(../fonts/starwars2.ttf);
+    html, body {
+      background-image: url(https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg);
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; 
+    
     }
+
+    .frame {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+
+      /* Time and Date Styling */
+.time-date-container {
+  position: fixed;
+  top: 15px;
+  right: 55px;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+}
+
+.time {
+  font-size: 30px;
+  font-weight: bold;
+ 
+}
+
+.date {
+  font-size: 18px;
+}
+
+.back{
+  top: 50px;
+  margin-left: 55px;
+  font-family: "Starwars2";
+  color: white;
+  font-size: 30px;
+  position: fixed
   
+}
+  @font-face {
+    font-family: Starwars2;
+    src: url(../fonts/starwars2.ttf);
+  }
+/* Content container */
+.content-container {
+position: absolute;
+top: 60%; /* Positioned lower on the page */
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+align-items: flex-start; /* Start alignment for the menu */
+color: white;
+font-family: Arial, sans-serif;
+width: 95%;
+max-width: 1200px; /* Wider box */
+height: 60vh; /* Reduced height for the grid */
+}
+
+/* Side menu (buttons on the left) */
+.side-menu {
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin-right: 20px; /* Space between menu and grid */
+}
+
+.menu-button {
+background: rgba(255, 255, 255, 0.1);
+border: 2px solid white;
+padding: 10px 20px;
+color: white;
+cursor: pointer;
+font-size: 18px;
+border-radius: 5px;
+transition: background 0.3s ease;
+text-align: left; /* Align text to the left */
+}
+
+.menu-button:hover, .menu-button.active {
+background: white;
+color: black;
+}
+
+/* Scrollable poster grid container */
+.poster-grid-container {
+flex-grow: 1;
+height: 100%; /* Fill available height */
+overflow-y: auto; /* Enable vertical scrolling */
+overflow-x: hidden; /* Remove horizontal scrollbar */
+border: 2px solid rgba(255, 255, 255, 0.2); /* Optional border */
+border-radius: 10px;
+padding-right: 10px; /* Extra padding for smooth scroll */
+}
+
+/* Poster grid */
+.poster-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3 columns */
+grid-auto-rows: 350px; /* Row height for image and text */
+gap: 20px; /* Space between items */
+justify-items: center; /* Center items horizontally */
+width: 100%;
+}
+
+/* Individual poster item */
+.item {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: rgba(255, 255, 255, 0.1);
+width: 200px; /* Poster width */
+height: 330px; /* Poster height + text */
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Separator between image and text */
+}
+
+.poster-title {
+margin: 5px 0;
+font-size: 16px;
+color: white;
+font-weight: bold;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+width: 90%; /* Keep text aligned with poster width */
+}
+
+.a{
+color: white;
+text-align: center;
+margin-top: 100px;
+font-family: "Starwars2";
+position: relative;
+font-size: 75px;
+}
+.b{
+color: rgb(41, 0, 118);
+text-align: center;
+margin-top: -178px;
+font-family: "Starwars2";
+font-size: 75px;
+
+
+}
