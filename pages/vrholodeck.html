@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR Holodeck</title>
+    <title>VR Holo Deck</title>
     <link rel="stylesheet" href="../style/vrholodeck.css">
 </head>
 <body>
-    <img src="../images/frame.svg" alt="frame" class="frame">
-
     <div class="time-date-container">
         <div class="time" id="time">--:--</div>
         <div class="date" id="date">--/--/----</div>
-      </div>
     </div>
-    <a href="../index.html" class="back" >Terug</a>
+ 
+    <a href="/index.html" class="back">Terug</a>
+ 
+    <h1>VR Holo Deck</h1>
+ 
+    <div class="holo-deck-container">
+        <div class="holo-effect">
+            <!-- Projectie-animatie of video -->
+            <video class="holo-video" autoplay loop muted>
+                <source src="../images/youtube_fZIbLXr0iNk_1920x1080_h264.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="holo-description">
+            <p>Stap in het Holo Deck en verken een interactieve weergave van de ruimte.
+               Gebruik de knoppen hieronder om naar verschillende simulaties te gaan!</p>
+        </div>
+    </div>
+ 
+    <div class="button-container">
+        <button class="explore">Verken de Ruimte</button>
+        <button class="portal">Activeer Portaal</button>
+    </div>
+ 
+
+</body>
+</html>
     <script src="../javascript/vrholodeck.js" ></script>
 </body>
 </html>

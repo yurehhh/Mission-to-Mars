@@ -53,3 +53,31 @@
     font-family: Starwars2;
     src: url(../fonts/starwars2.ttf);
   }
+
+  .music-player {
+    margin-top: 460px;
+    margin-left: 770px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    width: 320px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.player-header h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.player-controls audio {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.track-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
